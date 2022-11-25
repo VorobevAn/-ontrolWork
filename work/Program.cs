@@ -5,23 +5,32 @@
 
 //Console.WriteLine("Введите текст: ");
 //string t = Console.ReadLine()!;
-string[] text = { "Olya", "has", "a", "pencil", "Olya", "has", "a", "pen", "She", "draws", "with", "a", "pencil", "She", "writes", "with", "a", "pen" };
 
-for (int i = 0; i < text.Length; i++)
+
+string[] text = { "Olya", "has", "a", "pencil", "Olya", "has", "a", "pen", "She", "draws", "with", "a", "pencil", "She", "writes", "with", "a", "pen" };
+Print(text);
+string[] text2 = Sort(text);
+Console.WriteLine();
+Print(text2);
+
+string[] Sort(string[] text)
 {
-    Console.Write($"{text[i]} ");
-}
-int j = 0;
-for (int i = 0; i < text.Length; i++)
-{
+    int j = 0;
     string[] text2 = new string[text.Length];
-    
-    if (text[i].Length <= 3)
+    for (int i = 0; i < text.Length; i++)
     {
-        text2[j] = text[i];
-        j++;
+        if (text[i].Length <= 3)
+        {
+            text2[j] = text[i];
+            j++;
+        }
+    }
+    return text2;
+}
+void Print(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
     }
 }
-
- 
-   
