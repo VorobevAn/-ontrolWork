@@ -3,9 +3,6 @@
 //Первоночальный массив можно ввести с клавиатуры или задать на старте.
 
 
-//Console.WriteLine("Введите текст: ");
-//string t = Console.ReadLine()!;
-
 
 string[] text = { "Olya", "has", "a", "pencil", "Olya", "has", "a", "pen", "She", "draws", "with", "a", "pencil", "She", "writes", "with", "a", "pen" };
 Print(text);
